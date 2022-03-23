@@ -1,25 +1,36 @@
 * Spring 2022 - Lab 08
 
-* Last name:
+* Last name: Abushlaih
 
-* First name:
+* First name: David
 
-* GitHub username:
+* Github username: DavidA123777
 
-* Notes:
+* Notes: I used a file called main.cpp to call all of the functions which create an output image file. main.cpp uses functions from imageio.cpp and
+invert.cpp. I made comments on main.cpp to reflect the names of the files which were created and what each function does.
+
+When you call make and then ./main outImage.pgm
+gets created for task A, outImage 2 for task B, outImage3 for task C, outImage4 for task D, outImage5 for task E, and outImage6 for
+task F.
+
+They are all based on the image of the cat inImage.pgm and
+
+if you call (make clean) all of these files get removed and you have to do make and ./main
+to get these output files again.
 
 
-  
+
+
 * General instructions:
 - Fill in your name and GitHub username on top.
 - Use the Notes section to add any notes to the instructor.
 - The main lab description can be found here:
-  https://maryash.github.io/135/labs/lab_08.html 
+  https://maryash.github.io/135/labs/lab_08.html
 
 
 * Specific instructions for lab 08
 
-The main lab references in image named *inImage.pgm*. You can download
+The main lab references an image named *inImage.pgm*. You can download
 that or use your own but this repo includes two sample *pgm* (and
 *jpg*) files that you can use to test your solution.
 
@@ -30,7 +41,7 @@ writeImage. They have been modified to accept a std::string as the
 first parameter representing the name of the file to read or write.
 
 There is also an example file: ~sample.cpp~ and a ~Makefile~ that
-builds it to shhow hwo to use ~imageio.cpp~.
+builds it to show how to use ~imageio.cpp~.
 
 For this lab, instead of writing separate programs, write one program
 that you should compile using *make*. You should modify the provided
@@ -45,7 +56,7 @@ Important specifics:
    for *main* which builds the program and *clean* which removes ~.o~
    files.
 2. Your program must consist of *at least* two ~.cpp~ files if not
-   more, not counting ~imageio.cpp~. 
+   more, not counting ~imageio.cpp~.
 3. You *should not* change anything in ~iamgeio.cpp~.
 4. This lab should *not* use ~doctest.h~, it should just run with no
    user input and generate the output images.
